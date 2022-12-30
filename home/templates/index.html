@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Geocat Admin Panel
+{% endblock %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <h1>Geocat Admin Panel</h1>
+</div>
+<div class="container-fluid">
+    <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th>UUID</th>
+            <th>Title</th>
+            <th>Published</th>
+            <th>Valid</th>
+          </tr>
+        </thead>
+        <tbody>
+            {% for md in metadata %}
+                <tr>
+                    <td>{{ md.id }}</td>
+                    <td>{{ md.title }}</td>
+                    <td>{{ md.published }}</td>
+                    <td>{{ md.valid }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+      </table>
+</div>
+
+{% endblock %}
