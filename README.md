@@ -18,7 +18,7 @@ git clone https://github.com/benoitregamey/template-flask-postgreSQL.git
 ### Create a python virtual environment
 ```bash
 cd template-flask-postgreSQL
-python3 -m venv .env
+python3 -m venv .venv
 source .env/bin/activate
 ```
 
